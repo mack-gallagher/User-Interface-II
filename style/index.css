@@ -1,1 +1,190 @@
-/* Add CSS styling here */
+/* BEGIN RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RESET END */
+
+* {
+  margin: 0;
+  color: rgb(20,60,140);
+}
+
+html, body {
+  min-height: 100%;
+}
+
+.all-non-footer-content-container {
+  background-color: rgb(120,210,230);
+  min-height: 100vh;
+}
+
+header {
+  background-color: rgb(100,190,210);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  margin: 2%;
+}
+
+.header-right nav {
+  display: flex;
+  justify-content: space-around;
+  transform: translateX(-50%);
+}
+
+.header-right nav a {
+  background-color: rgb(200,120,120);
+  margin: 5%;
+  padding: 5%;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.header-right nav a:hover {
+  background-color: rgb(208,126,126);
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 5%;
+}
+
+.big-box {
+  height: 40vh;
+  width: 80vh;
+  margin: 5% 0 3% 0;
+  background-image: url('https://picsum.photos/1000');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-box a {
+  padding: 3%;
+  text-decoration: none;
+  background-color: rgb(20,60,140);
+  color: white;
+  border-radius: 10px;
+}
+
+.big-box a:hover {
+  background-color: rgb(35,75,160);
+}
+
+.small-boxes-container {
+  display: flex;
+  height: 60vh;
+  flex-direction: column; 
+  justify-content: space-between;
+}
+
+.box-row {
+  display: flex;
+  height: 30vh;
+  width: 90vw;
+  justify-content: space-around;
+  margin: 0 0 1%;
+}
+
+.small-box {
+  width: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-box-picture {
+  width: 40vh;
+  height: 20vh;
+  background-image: url('https://picsum.photos/500');
+  margin: 0 0 4% 0;
+}
+
+footer {
+  min-height: 10%;
+  background-color: rgb(100,190,210);
+}
+
+footer nav {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer nav a {
+  background-color: rgb(200,120,120);
+  text-decoration: none;
+  display: inline-block;
+  margin: 2%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  min-width: 5rem;
+  padding: 0.1% 1% 0.1%; 1%;
+  text-align: center;
+  border-radius: 7px;
+  color: white;
+}
+
+footer nav a:hover {
+  background-color: rgb(208,126,126);
+}
