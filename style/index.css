@@ -149,7 +149,8 @@ h1 {
 
 .box-row {
   display: flex;
-  height: 20vh;
+  flex-wrap: wrap;
+  min-height: 20vh;
   width: 90vw;
   justify-content: space-around;
   align-items: baseline;
@@ -159,21 +160,22 @@ h1 {
 .small-box-border {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  width: 44vh;
-  height: 22vh;
+  align-items: center;
+  width: 43.5vh;
+  height: 22.5vh;
   padding: 1% 0 0 0;
   background-color: rgb(100,150,180);
   border-radius: 5px;
 }
 
 .small-box {
-  width: 30vh;
+  max-width: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 6% 0 6%;
 }
 
 .small-box p {
@@ -188,8 +190,8 @@ h1 {
 .small-box-picture {
   width: 40vh;
   height: 20vh;
-  margin: 0 0 4% 0;
   background-color: rgb(100,190,210);
+  margin: 0 0 1% 0;
   z-index: 1;
   background-size: cover;
 }
