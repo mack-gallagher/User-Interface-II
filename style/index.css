@@ -110,7 +110,7 @@ h1 {
 .big-box-container {
   height: 40vh;
   width: 80vh;
-  padding: 1%;
+  padding: 0.7rem;
   margin: 5% 0 3% 0;
   display: flex;
   justify-content: center;
