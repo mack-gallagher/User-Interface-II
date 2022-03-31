@@ -96,8 +96,8 @@ header {
   background-color: rgb(208,126,126);
 }
 
-h1 {
-  font-size: 3em;
+h2 {
+  font-size: 2em;
 }
 
 .main-content {
@@ -108,8 +108,8 @@ h1 {
 }
 
 .big-box-container {
-  height: 40vh;
-  width: 80vh;
+  height: 60vh;
+  width: 120vh;
   padding: 0.7rem;
   margin: 5% 0 3% 0;
   display: flex;
@@ -128,16 +128,35 @@ h1 {
   align-items: center;
 }
 
-.big-box a {
-  padding: 3%;
-  text-decoration: none;
+.big-box-center-content {
+  height: 50%;
+  transform: translateY(5%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.big-box-center-content h1 {
+  color: white;
   background-color: rgb(20,60,140);
+  font-size: 3.7em;
+  line-height: 1.3em;
+  padding: 0 .3em 0 .3em;
+  margin: 0 0 .3em 0;
+  border-radius: 5px;
+}
+
+.big-box-center-content a {
+  padding: 0.9em;
+  text-decoration: none;
+  background-color: rgb(40,85,175);
   color: white;
   border-radius: 10px;
 }
 
 .big-box a:hover {
-  background-color: rgb(35,75,160);
+  background-color: rgb(50,95,185);
 }
 
 .small-boxes-container {
@@ -250,21 +269,3 @@ footer nav a:hover {
   background-color: rgb(208,126,126);
 }
 
-/* TABLET */
-@media (max-width: 800px) {
-  
-}
-
-/* END TABLET */
-
-/* PHONE */
-
-@media (max-width: 500px) {
-
-/* nav should be vertical, no color header, still
-   color footer, boxes should go 2 x 3 rather than
-   3 x 2
-
-}
-
-/* END PHONE */
