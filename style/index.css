@@ -53,7 +53,7 @@ table {
 
 * {
   margin: 0;
-  color: rgb(20,60,140);
+  color: white;
 }
 
 html, body {
@@ -61,12 +61,12 @@ html, body {
 }
 
 .all-non-footer-content-container {
-  background-color: rgb(5,10,25); 
+  background-color: black; 
   min-height: 100vh;
 }
 
 header {
-  background-color: rgb(30,100,130);
+  background-color: darkgrey;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -84,19 +84,20 @@ header {
 }
 
 .header-right nav a {
-  background-color: rgb(140,100,80);
+  background-color: black;
   padding: 5%;
   text-decoration: none;
   color: white;
 }
 
 .header-right nav a:hover {
-  background-color: rgb(208,126,126);
+  background-color: lightgrey;
+  color: black;
 }
 
 h2 {
   font-size: 2em;
-  color: rgb(5,10,25); 
+  color: black;
 }
 
 .main-content {
@@ -113,7 +114,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(100,150,180);
+  background-color: black;
 } 
 
 .big-box {
@@ -136,7 +137,7 @@ h2 {
 
 .big-box-center-content h1 {
   color: white;
-  background-color: rgb(20,60,140);
+  background-color: black;
   font-size: 3.4em;
   line-height: 1.2em;
   padding: 0 .25em 0 .25em;
@@ -147,12 +148,13 @@ h2 {
 .big-box-center-content a {
   padding: 0.9em;
   text-decoration: none;
-  background-color: rgb(40,85,175);
+  background-color: black;
   color: white;
 }
 
 .big-box a:hover {
-  background-color: rgb(50,95,185);
+  background-color: white;
+  color: black;
 }
 
 .small-boxes {
@@ -164,9 +166,13 @@ h2 {
   justify-items: center;
 }
 
+.img-and-caption {
+  text-align: center;
+}
+
 footer {
   min-height: 10%;
-  background-color: rgb(30,100,130);
+  background-color: darkgrey;
 }
 
 footer nav {
@@ -177,7 +183,7 @@ footer nav {
 }
 
 footer nav a {
-  background-color: rgb(140,100,80);
+  background-color: black;
   text-decoration: none;
   display: inline-block;
   margin: 2%;
@@ -190,7 +196,8 @@ footer nav a {
 }
 
 footer nav a:hover {
-  background-color: rgb(208,126,126);
+  background-color: lightgrey;
+  color: black;
 }
 
 @media (max-width: 800px) {
