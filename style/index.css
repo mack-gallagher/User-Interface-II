@@ -79,16 +79,14 @@ header {
 
 .header-right nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: stretch;
   transform: translateX(-50%);
 }
 
 .header-right nav a {
   background-color: rgb(140,100,80);
-  margin: 5%;
   padding: 5%;
   text-decoration: none;
-  border-radius: 5px;
   color: white;
 }
 
@@ -116,7 +114,6 @@ h2 {
   justify-content: center;
   align-items: center;
   background-color: rgb(100,150,180);
-  border-radius: 5px;
 } 
 
 .big-box {
@@ -144,7 +141,6 @@ h2 {
   line-height: 1.2em;
   padding: 0 .25em 0 .25em;
   margin: 0 0 .25em 0;
-  border-radius: 5px;
   text-align: center;
 }
 
@@ -153,91 +149,19 @@ h2 {
   text-decoration: none;
   background-color: rgb(40,85,175);
   color: white;
-  border-radius: 10px;
 }
 
 .big-box a:hover {
   background-color: rgb(50,95,185);
 }
 
-.small-boxes-container {
-  display: flex;
-  min-height: 50vh;
-  flex-direction: column; 
-  justify-content: space-between;
-}
-
-.box-row {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 20vh;
-  width: 80vw;
-  justify-content: space-around;
-  align-items: baseline;
-  margin: 0 0 5%;
-}
-
-.small-box-border {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 43.5vh;
-  height: 22.5vh;
-  padding: 1% 0 0 0;
-  background-color: rgb(100,150,180);
-  border-radius: 5px;
-}
-
-.small-box {
-  max-width: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 6% 0 6%;
-}
-
-.small-box p {
-  transform: translateY(-20%);
-  z-index: 0;
-  color: white;
-  background-color: rgb(100,150,180);
-  border-radius: 10px;
-  padding: 10% 5% 5% 5%;
-}
-
-.small-box-picture {
-  width: 40vh;
-  height: 20vh;
-  background-color: rgb(100,190,210);
-  margin: 0 0 1% 0;
-  z-index: 1;
-  background-size: cover;
-}
-
-#pic-1 {
-  background-image: url('../assets/lake-pic.JPG');
-}
-
-#pic-2 {
-  background-image: url('../assets/sky-pic.JPG');
-}
-
-#pic-3 {
-  background-image: url('../assets/face.svg');
-}
-
-#pic-4 {
-  background-image: url('../assets/person.svg');
-}
-
-#pic-5 {
-  background-image: url('../assets/fire.svg');
-}
-
-#pic-6 {
-  background-image: url('../assets/street-contraption.JPG');
+.small-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  width: 100%;
+  min-height: 80vh;
+  justify-items: center;
 }
 
 footer {
@@ -262,7 +186,6 @@ footer nav a {
   min-width: 5rem;
   padding: 0.1% 1% 0.1%; 1%;
   text-align: center;
-  border-radius: 7px;
   color: white;
 }
 
