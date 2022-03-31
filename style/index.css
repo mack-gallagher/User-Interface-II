@@ -213,31 +213,9 @@ h2 {
   margin: 0 0 1% 0;
   z-index: 1;
   background-size: cover;
+  background-image: url('https://picsum.photos/500');
 }
 
-#pic-1 {
-  background-image: url('../assets/lake-pic.JPG');
-}
-
-#pic-2 {
-  background-image: url('../assets/sky-pic.JPG');
-}
-
-#pic-3 {
-  background-image: url('../assets/face.svg');
-}
-
-#pic-4 {
-  background-image: url('../assets/person.svg');
-}
-
-#pic-5 {
-  background-image: url('../assets/fire.svg');
-}
-
-#pic-6 {
-  background-image: url('../assets/street-contraption.JPG');
-}
 
 footer {
   min-height: 10%;
