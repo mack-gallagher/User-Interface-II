@@ -249,3 +249,22 @@ footer nav a {
 footer nav a:hover {
   background-color: rgb(208,126,126);
 }
+
+/* TABLET */
+@media (max-width: 800px) {
+  
+}
+
+/* END TABLET */
+
+/* PHONE */
+
+@media (max-width: 500px) {
+
+/* nav should be vertical, no color header, still
+   color footer, boxes should go 2 x 3 rather than
+   3 x 2
+
+}
+
+/* END PHONE */
