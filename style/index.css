@@ -54,10 +54,12 @@ table {
 * {
   margin: 0;
   color: white;
+  overflow: hidden;
 }
 
 html, body {
   min-height: 100%;
+  width: 100%;
 }
 
 .all-non-footer-content-container {
@@ -121,6 +123,7 @@ h2 {
   width: 100%;
   height: 100%;
   background-image: url('https://picsum.photos/1000');
+  background-repead: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,7 +138,7 @@ h2 {
   align-items: center;
 }
 
-.big-box-center-content h1 {
+h1 {
   color: white;
   background-color: black;
   font-size: 3.4em;
@@ -264,6 +267,7 @@ footer nav a:hover {
     flex-direction: column;
     align-items: center;
   }
+
   .header-left {
     height: 20vh;
     display: flex;
@@ -273,10 +277,12 @@ footer nav a:hover {
 
   h1 {
     width: 70vw;
+    text-align: center;
   }
  
   h2 {
-    font-size: 3em;
+    font-size: 3rem;
+    text-align: center;
   }
   
   .header-right nav {
@@ -302,7 +308,12 @@ footer nav a:hover {
   }
 
   .big-box-container {
-    width: 90vw;
+    width: 100vw;
+    overflow: xhidden;
+  }
+
+  .big-box {
+    width: 100em;
   }
 
 }
