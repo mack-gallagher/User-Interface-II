@@ -53,20 +53,21 @@ table {
 
 * {
   margin: 0;
-  color: rgb(20,60,140);
+  color: white;
 }
 
 html, body {
   min-height: 100%;
+  width: 100%;
 }
 
 .all-non-footer-content-container {
-  background-color: rgb(120,210,230);
+  background-color: black; 
   min-height: 100vh;
 }
 
 header {
-  background-color: rgb(100,190,210);
+  background-color: darkgrey;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -79,147 +80,108 @@ header {
 
 .header-right nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: stretch;
   transform: translateX(-50%);
 }
 
 .header-right nav a {
-  background-color: rgb(200,120,120);
-  margin: 5%;
+  background-color: black;
   padding: 5%;
   text-decoration: none;
-  border-radius: 5px;
   color: white;
 }
 
 .header-right nav a:hover {
-  background-color: rgb(208,126,126);
+  background-color: lightgrey;
+  color: black;
 }
 
-h1 {
-  font-size: 3em;
+h2 {
+  font-size: 2em;
+  color: black;
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 0 5%;
 }
 
 .big-box-container {
-  height: 40vh;
-  width: 80vh;
-  padding: 1%;
-  margin: 5% 0 3% 0;
+  height: 50vh;
+  width: 100vh;
+  padding: 0.7rem;
+  margin: 5% 0 5% 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(100,150,180);
-  border-radius: 5px;
+  background-color: black;
 } 
 
 .big-box {
   width: 100%;
   height: 100%;
   background-image: url('https://picsum.photos/1000');
+  background-repead: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.big-box a {
-  padding: 3%;
-  text-decoration: none;
-  background-color: rgb(20,60,140);
-  color: white;
-  border-radius: 10px;
-}
-
-.big-box a:hover {
-  background-color: rgb(35,75,160);
-}
-
-.small-boxes-container {
-  display: flex;
-  height: 65vh;
-  flex-direction: column; 
-  justify-content: space-between;
-}
-
-.box-row {
-  display: flex;
-  height: 20vh;
-  width: 90vw;
-  justify-content: space-around;
-  align-items: baseline;
-  margin: 0 0 5%;
-}
-
-.small-box-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 44vh;
-  height: 22vh;
-  padding: 1% 0 0 0;
-  background-color: rgb(100,150,180);
-  border-radius: 5px;
-}
-
-.small-box {
-  width: 30vh;
+.big-box-center-content {
+  height: 50%;
+  transform: translateY(5%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+h1 {
+  color: white;
+  background-color: black;
+  font-size: 3.4em;
+  line-height: 1.2em;
+  padding: 0 .25em 0 .25em;
+  margin: 0 0 .25em 0;
   text-align: center;
 }
 
-.small-box p {
-  transform: translateY(-20%);
-  z-index: 0;
+.big-box-center-content a {
+  padding: 0.9em;
+  text-decoration: none;
+  background-color: black;
   color: white;
-  background-color: rgb(100,150,180);
-  border-radius: 10px;
-  padding: 10% 5% 5% 5%;
 }
 
-.small-box-picture {
-  width: 40vh;
-  height: 20vh;
-  margin: 0 0 4% 0;
-  background-color: rgb(100,190,210);
-  z-index: 1;
+.big-box a:hover {
+  background-color: white;
+  color: black;
 }
 
-#pic-1 {
-  background-image: url('../assets/lake-pic.JPG');
+.small-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  width: 100%;
+  min-height: 80vh;
+  justify-items: center;
 }
 
-#pic-2 {
-  background-image: url('../assets/sky-pic.JPG');
+.img-and-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#pic-3 {
-  background-image: url('../assets/face.svg');
-}
-
-#pic-4 {
-  background-image: url('../assets/person.svg');
-}
-
-#pic-5 {
-  background-image: url('../assets/fire.svg');
-}
-
-#pic-6 {
-  background-image: url('../assets/street-contraption.JPG');
+.img-and-caption p {
+  margin: 2%;
 }
 
 footer {
   min-height: 10%;
-  background-color: rgb(100,190,210);
+  background-color: darkgrey;
 }
 
 footer nav {
@@ -230,7 +192,7 @@ footer nav {
 }
 
 footer nav a {
-  background-color: rgb(200,120,120);
+  background-color: black;
   text-decoration: none;
   display: inline-block;
   margin: 2%;
@@ -239,10 +201,128 @@ footer nav a {
   min-width: 5rem;
   padding: 0.1% 1% 0.1%; 1%;
   text-align: center;
-  border-radius: 7px;
   color: white;
 }
 
 footer nav a:hover {
-  background-color: rgb(208,126,126);
+  background-color: lightgrey;
+  color: black;
+}
+
+@media (max-width: 1000px) { /* to accomodate up to Surface Pro 7 */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    height: 4rem;
+    line-height: 4rem;
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .header-right nav {
+    transform: translateX(0);
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header-right nav a {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 25%;
+    border-right: 0.5px solid white;
+    border-left: 0.5px solid white;
+    border-bottom: 1px solid white;
+  }
+
+  #top-link {
+    border-left: none;
+  }
+ 
+  #bottom-link {
+    border-right: none;
+  }
+
+  .small-boxes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-and-caption {
+    justify-content: space-around;
+    margin: 2%;
+  }
+
+  .big-box-container {
+    width: 96%;
+  }
+
+  .big-box {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-left {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    width: 70vw;
+    font-size: 2rem;
+    text-align: center;
+  }
+ 
+  h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  
+  .header-right nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .header-right nav a {
+    height: 5vh;
+    line-height: 5vh;
+    width: 90%;
+    text-align: center;
+    font-size: 1.5em;
+    border-top: 0.5px solid white;
+    border-bottom: 0.5px solid white;
+    margin: 0;
+  }
+
+  #top-link {
+    border-top: none;
+  }
+
+  .big-box-container {
+    width: 94%;
+  }
+
+  .big-box {
+    width: 100%;
+  }
+
 }
